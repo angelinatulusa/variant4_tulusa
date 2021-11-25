@@ -40,17 +40,22 @@ print()
 print()
 #3 Известны оценки по физике каждого из  учеников класса. Определить минимальную и максимальную оценки. (Оценки и количество учеников получаем случайным образом)
 from random import*
+max=1
+min=5
 k=randint(3,33)
 print("ucenikov v klasse:")
 print(k)
 print("ocenki ucenikov:")
 for i in range(1,k):
     i=randint(1,5)
+    if i>max:
+        max=i
+    if i<min:
+        min=i
     print(i)
-m=max(i)
-print("lutsii rezultat",m)
-n=min(i)
-print("hudsii rezultat",n)
+print("lutsii rezultat",max)
+
+print("hudsii rezultat",min)
 
 
 
