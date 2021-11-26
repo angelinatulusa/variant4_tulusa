@@ -46,7 +46,7 @@ k=randint(3,33)
 print("ucenikov v klasse:")
 print(k)
 print("ocenki ucenikov:")
-for i in range(1,k):
+for i in range(0,k):
     i=randint(1,5)
     if i>max:
         max=i
